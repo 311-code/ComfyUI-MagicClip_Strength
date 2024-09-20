@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-magicclip_strength"
+description = "This project allows you to adjust SDXL's two text encoder's strengths individually for clip_g (ViT-bigG) and clip_l (CLIP-ViT-L) within ComfyUI. (And other adjustments)"
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/311-code/ComfyUI-MagicClip_Strength"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-MagicClip_Strength"
+Icon = ""
