@@ -16,7 +16,7 @@ This project allows you to adjust SDXL's two text encoder's strengths individual
 ## 🔧 Features
 
 - 🎯 **Clip Text Encoding**: Adjust `clip_g` (global) and `clip_l` (local) strengths for better text-to-image alignment.
-- 🖼️ **Enhanced Layer_idx values**: Specify positive `layer_idx` values. (ComfyUI usually just only supports negative values.) You can mix and match with + and - values and positive and negative prompt.
+- 🖼️ **Enhanced Layer_idx values**: Specify positive `layer_idx` values. (ComfyUI usually just only supports negative values.) You can mix and match with + and - values on positive and negative prompt.
 
 ## 🛠️ Installation Instructions
 
@@ -42,8 +42,8 @@ This project allows you to adjust SDXL's two text encoder's strengths individual
 ## 💡 How to Use
 
 - After installation, use the node to adjust Clip strength directly in your workflows.
-- For more refined control over SDXL models, experiment with `clip_g` and `clip_l` strengths.
-- PS. Highly recommend using a 'saveclip' node on SDXL checkpoint, then use the saved custom clip_l into dualclip loader to mix and match clip_l with various models. (use this node and adjust strength)
+- For more refined control over SDXL models, experiment with `clip_g` and `clip_l` strengths and positive and negative values, layer_idx, and size_cond_factor. (as shown in example image)
+- PS. I also highly trying out a 'saveclip' node on your favorite SDXL checkpoint, then use the newly saved custom clip_l in dualclip loader to mix and match clip_l with various models. (use this node and adjust strength)
 
 ## 💖 Support Me
 
