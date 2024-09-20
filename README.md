@@ -6,6 +6,9 @@
   <a href="https://ko-fi.com/311_code"><img src="https://img.shields.io/badge/Support%20Me-Ko--Fi-red?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Support me on Ko-Fi"></a>
 </p>
 
+## 🎨 Regular Clip Text Encode (ZZzzz)
+![Regular Clip Text Encode](https://github.com/311-code/ComfyUI-MagicClip_Strength/blob/main/default_clip_text_encode.png?raw=true)
+
 ## ✨ Introduction
 
 This project allows you to adjust the two SDXL text encoder's strengths individually for `clip_g` (ViT-bigG) and `clip_l` (CLIP-ViT-L) within **ComfyUI**.
@@ -14,12 +17,6 @@ This project allows you to adjust the two SDXL text encoder's strengths individu
 
 - 🎯 **Clip Text Encoding**: Adjust `clip_g` (global) and `clip_l` (local) strengths for better text-to-image alignment.
 - 🖼️ **Enhanced Layer_idx values**: This node allows you to specify positive `layer_idx` values. (ComfyUI usually just supports negative values.) You can mix and match with positive and negative prompt values.
-
-## 💡 Magic Clip Strength
-![Magic Clip Strength](https://github.com/311-code/ComfyUI-MagicClip_Strength/blob/main/magic_clip_strength.png?raw=true)
-
-## 🎨 Regular Clip Text Encode
-![Regular Clip Text Encode](https://github.com/311-code/ComfyUI-MagicClip_Strength/blob/main/default_clip_text_encode.png?raw=true)
 
 ## 🛠️ Installation Instructions
 
