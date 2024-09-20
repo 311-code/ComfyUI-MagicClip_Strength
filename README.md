@@ -45,7 +45,7 @@ This project allows you to adjust SDXL's two text encoder's strengths individual
 - For more refined control over SDXL models, experiment with `clip_g` and `clip_l` strengths and positive and negative values, layer_idx, and size_cond_factor. (as shown in example image)
 - PS. I also highly trying out a 'saveclip' node on your favorite SDXL checkpoint, then use the newly saved custom clip_l in dualclip loader to mix and match clip_l with various models. (use this node and adjust strength)
 
-- Please note using all positive layer_idx values on both positive and negative prompt can be hit and miss, for example here is the default comfyui purple galaxy glass bottle prompt with +8 +8 (I would recommend mix and max postive and negative or do all negative):
+Please note that using all positive layer_idx values for both the positive and negative prompts can be hit or miss. For example, here is the default ComfyUI purple galaxy glass bottle prompt with values +8 for both prompts. I recommend either mixing positive and negative values or using only negative values for better prompt adherence.
 <img src="https://github.com/311-code/ComfyUI-MagicClip_Strength/blob/main/comfy_default_w_dual_positive_layer_idx.png?raw=true" alt="Dual + layer_idx" width="75%">
 
 ## 💖 Support Me
