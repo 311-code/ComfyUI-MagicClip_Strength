@@ -11,12 +11,12 @@
 
 ## ✨ Introduction
 
-This project allows you to adjust the two SDXL text encoder's strengths individually for `clip_g` (ViT-bigG) and `clip_l` (CLIP-ViT-L) within **ComfyUI**.
+This project allows you to adjust SDXL's two text encoder's strengths individually for `clip_g` (ViT-bigG) and `clip_l` (CLIP-ViT-L) within **ComfyUI**. (And other adjustments)
 
 ## 🔧 Features
 
 - 🎯 **Clip Text Encoding**: Adjust `clip_g` (global) and `clip_l` (local) strengths for better text-to-image alignment.
-- 🖼️ **Enhanced Layer_idx values**: This node allows you to specify positive `layer_idx` values. (ComfyUI usually just supports negative values.) You can mix and match with positive and negative prompt values.
+- 🖼️ **Enhanced Layer_idx values**: Specify positive `layer_idx` values. (ComfyUI usually just only supports negative values.) You can mix and match with + and - values and positive and negative prompt.
 
 ## 🛠️ Installation Instructions
 
