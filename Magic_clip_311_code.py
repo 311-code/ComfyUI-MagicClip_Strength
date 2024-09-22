@@ -30,7 +30,7 @@ class CLIPTextEncodeSDXL_311_code:
         cond_combined = None
         pooled_combined = None
 
-        # Modify the CLIP layers based on `layer_idx`
+        # Modify CLIP layers based on `layer_idx`
         clip = clip.clone()  # Clone the clip model to ensure it's modifiable
         clip.clip_layer(layer_idx)  # Set the stopping point for the CLIP model based on layer_idx
 
@@ -47,11 +47,11 @@ class CLIPTextEncodeSDXL_311_code:
             while len(tokens_g["g"]) < len(tokens_l["l"]):
                 tokens_g["g"] += empty_g
 
-        # Encode the tokens
+        # Encode tokens
         tokens = {"g": tokens_g["g"], "l": tokens_l["l"]}
         cond_combined, pooled_combined = clip.encode_from_tokens(tokens, return_pooled=True)
 
-        # Apply strengths to global and local if needed
+        # Apply strengths to g and l if needed
         if cond_combined.dim() == 3:
             if text_g.strip():  # Only apply strength to g if text_g is not empty
                 cond_combined[:, :, :] *= clip_g_strength
